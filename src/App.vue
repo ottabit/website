@@ -11,7 +11,7 @@ import github from "@/assets/icons/github.png"
 
 <template>
   <div class="w-full mx-auto min-h-full">
-    <div class="mx-auto bg-white/50 rounded-xl w-full min-h-[93vh] p-4">
+    <div class="mx-auto bg-white/50 rounded-xl w-full min-h-[93vh] p-4 flex flex-col justify-center items-center">
       <div class="flex flex-row items-center justify-center">
         <img alt="Ottabit logo" class="min-w-[70px] max-w-[120px] overflow-hidden" :src="logo" />
         <img :src="typeface" alt="Typeface" class="min-w-[180px] max-w-[250px] overflow-hidden" />
