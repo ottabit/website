@@ -1,11 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import './base.css';
+
+@font-face {
+  font-family: 'FiraCode';
+  src: url('@/assets/fonts/FiraCode.ttf') format('truetype');
+}
+
+body {
+  font-family: "FiraCode", sans-serif !important;
+}
+
+:root {
+  --primary-color: #ea8536;
+  --secondary-color: #8344a7;
+}
 
 #app {
   max-width: 1280px;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 2rem;
 
   font-weight: normal;
+
+  background: linear-gradient(var(--primary-color), var(--secondary-color));
 }
 
 a,
