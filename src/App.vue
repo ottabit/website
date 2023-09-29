@@ -10,18 +10,17 @@ import github from "@/assets/icons/github.png"
 </script>
 
 <template>
-  <div class="w-full mx-auto">
-    <div class="mx-auto bg-white/50 rounded-xl w-full min-h-[93vh] p-4 flex flex-col justify-center items-center main-container">
-      <div class="inline-flex flex-row flex-wrap items-center justify-center">
-        <img alt="Ottabit logo" class="min-w-auto max-w-[120px]" :src="logo" />
-        <img :src="typeface" alt="Typeface" class="min-w-auto max-w-[250px]" />
+    <div class="mx-auto bg-white/50 rounded-xl p-4 flex flex-col justify-around items-center main-container">
+      <div class="flex flex-row flex-wrap items-center justify-center">
+        <img alt="Ottabit logo" class="max-w-[120px] w-full" :src="logo" />
+        <img :src="typeface" alt="Typeface" class="max-w-[250px] w-full" />
       </div>
       <div class="flex flex-col items-center">
-        <img :src="photo" alt="Profile" class="min-w-[70px] max-w-[180px] overflow-hidden" />
+        <img :src="photo" alt="Profile" class="w-full max-w-[250px]" />
       </div>
       <div class="flex flex-col items-center justify-center mt-4 mb-4">
         <p class="text-lg text-center">Andrea Doghetti</p>
-        <p class="text-xl mt-2 mb-2 text-center">Full Stack Web Developer</p>
+        <p class="xs:text-xl lg:text-3xl mt-2 mb-2 text-center">Full Stack Web Developer</p>
       </div>
       <div class="flex flex-row items-center justify-center gap-x-4 mt-4">
         <a href="mailto:andrea@ottabit.com" target="_blank">
@@ -35,5 +34,4 @@ import github from "@/assets/icons/github.png"
         </a>
       </div>
     </div>
-  </div>
 </template>
