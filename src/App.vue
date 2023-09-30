@@ -14,13 +14,13 @@ document.documentElement.style.setProperty('--vh',`${vh}px`);
 </script>
 
 <template>
-    <div class="mx-auto bg-white/50 rounded-xl p-4 flex flex-col justify-around items-center main-container">
-      <div class="flex flex-row flex-wrap items-center justify-center">
-        <img alt="Ottabit logo" class="max-w-[120px] w-full" :src="logo" />
-        <img :src="typeface" alt="Typeface" class="max-w-[250px] w-full" />
+    <div class="mx-auto bg-white/50 rounded-xl p-4 flex flex-col justify-around items-center main-container w-full">
+      <div class="flex flex-row w-fit items-center justify-center">
+        <img alt="Ottabit logo" class="max-w-[120px] min-w-0 w-1/3" :src="logo" />
+        <img :src="typeface" alt="Typeface" class="max-w-[250px] min-w-0 w-2/3" />
       </div>
       <div class="flex flex-col items-center">
-        <img :src="photo" alt="Profile" class="w-full max-w-[250px]" />
+        <img :src="photo" alt="Profile" class="w-2/3 max-w-[350px] min-w-0" />
       </div>
       <div class="flex flex-col items-center justify-center mt-4 mb-4">
         <p class="text-lg text-center">Andrea Doghetti</p>
