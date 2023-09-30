@@ -7,6 +7,10 @@ import photo from "@/assets/photo.png"
 import linkedin from "@/assets/icons/linkedin.png"
 import email from "@/assets/icons/email.png"
 import github from "@/assets/icons/github.png"
+
+let vh = window.innerHeight * 0.01;
+
+document.documentElement.style.setProperty('--vh',`${vh}px`);
 </script>
 
 <template>
